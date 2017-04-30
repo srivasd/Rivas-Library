@@ -1,0 +1,29 @@
+  <md-card class="bgc-orange-600">
+<div *ngIf="book">
+  <md-card-title class="bgc-orange-600">Book "{{book.title}}"</md-card-title>
+  <md-card-content class="bgc-orange-400">
+  <md-list>
+    <div *ngIf="book.id">
+      <label><md-icon md-list-avatar>info</md-icon> Id: {{book.id}}</label>
+    </div>
+      <br>
+      <md-list-item>
+      <md-icon md-list-avatar>dehaze</md-icon>
+      <md-input-container style="width: 30%;">
+      <input mdInput [(ngModel)]="book.title" placeholder="Title"/>
+      </md-input-container>
+  </md-list-item>
+  <md-list-item>
+      <md-icon md-list-avatar> insert_comment</md-icon>
+      <md-input-container style="width: 100%; height:50%">
+      <textarea mdInput [(ngModel)]="book.description" placeholder="Description"></textarea>
+      </md-input-container>
+  </md-list-item>
+  </md-list>
+  </md-card-content>
+    <md-card-actions class="bgc-orange-600">
+      <button md-button color="accent" class="text-upper" class="bgc-red-600"  (click)="cancel()">Cancel</button>
+      <button md-button color="accent" class="text-upper" class="bgc-green-600"  (click)="save()">Save</button>
+    </md-card-actions>
+</div>
+  </md-card>

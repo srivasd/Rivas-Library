@@ -1,0 +1,14 @@
+  <md-card class="bgc-orange-600">
+  <md-card-title class="bgc-orange-600"> <md-icon md-list-avatar>   library_books</md-icon> Books List</md-card-title>
+  <md-card-content class="bgc-orange-400">
+    <md-list>
+      <md-list-item *ngFor="let book of books">
+        <md-icon md-list-avatar>book</md-icon>
+        <a [routerLink]="['/books', book.id]">{{book.title}}</a>
+      </md-list-item>
+    </md-list>
+  </md-card-content>
+  <md-card-actions class="bgc-orange-600">
+    <button md-button color="accent" class="text-upper" class="bgc-green-600" (click)="newBook()">New book</button>
+  </md-card-actions>
+</md-card>

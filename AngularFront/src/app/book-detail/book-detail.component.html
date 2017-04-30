@@ -1,0 +1,14 @@
+<md-card class="bgc-orange-600">
+<div *ngIf="book">
+  <md-card-title class="bgc-orange-600"><md-icon md-list-avatar>book</md-icon> Book "{{book.title}}"</md-card-title>
+  <md-card-content class="bgc-orange-400">
+        <p>{{book.description}}</p>
+  </md-card-content>
+      <md-card-actions class="bgc-orange-600">
+        <button md-button color="accent" class="text-upper" class="bgc-red-600" (click)="removeBook()">Remove</button>
+        <button md-button color="accent" class="text-upper" class="bgc-blue-600" (click)="editBook()">Edit</button>
+        <br/><br/>
+        <button md-button color="accent" class="text-upper" class="bgc-grey-300" (click)="gotoBooks()">Back</button>
+      </md-card-actions>
+  </div>
+</md-card>
