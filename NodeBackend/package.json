@@ -1,0 +1,12 @@
+{
+  "name": "nodebackend",
+  "version": "1.0.0",
+  "description": "Backend implemented in node.js for a books application",
+  "main": "nodeBackend.js",
+  "author": "Sergio Rivas Delgado",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}
