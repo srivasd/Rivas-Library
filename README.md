@@ -21,7 +21,7 @@
     ![Classes diagram](screenshots/BookEdit.png)
 
 * __Book Detail__
-    ![Classes diagram](screenshots/Booklist.png)
+    ![Classes diagram](screenshots/BookDetail.png)
 
 * __New Book__
     ![Classes diagram](screenshots/NewBook.png)
