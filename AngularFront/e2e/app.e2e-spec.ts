@@ -1,10 +1,10 @@
-import { ProyectoAngularPage } from './app.po';
+import { PruebecillaPage } from './app.po';
 
-describe('proyecto-angular App', () => {
-  let page: ProyectoAngularPage;
+describe('pruebecilla App', () => {
+  let page: PruebecillaPage;
 
   beforeEach(() => {
-    page = new ProyectoAngularPage();
+    page = new PruebecillaPage();
   });
 
   it('should display message saying app works', () => {

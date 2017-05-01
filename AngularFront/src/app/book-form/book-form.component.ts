@@ -39,16 +39,27 @@ export class BookFormComponent {
   }
 
   save() {
+    if(this.newBook){
     this.service.addBook(this.book).subscribe(
-      book => { },
-      error => console.error('Error creating new book: ' + error)
-    );
-    window.history.back();
-    this.service.getBooks().subscribe(
+      book => {     
+        window.history.back();
+        this.service.getBooks().subscribe(
         books => this.books = books,
         error => console.log(error)
-      );
-  }
+      );},
+      error => console.error('Error creating new book: ' + error)
+    );
+    } else {
+      this.service.updateBook(this.book).subscribe(
+      book => {    
+        window.history.back();
+        this.service.getBooks().subscribe(
+        books => this.books = books,
+        error => console.log(error)
+      ); },
+      error => console.error('Error creating new book: ' + error)
+    );
+    }
 
-  
+  } 
 }

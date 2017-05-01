@@ -1,4 +1,4 @@
-# Rivas-Library [RIVAS LIBRARY LOGO](screenshots/book.png)
+# Rivas-Library ![RIVAS LIBRARY LOGO](screenshots/book.png)
 
 ### An Angular 4 + Node.js application based in a books library
 
